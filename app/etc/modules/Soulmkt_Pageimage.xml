@@ -1,0 +1,15 @@
+<!-- 
+	Desenvolvido por Crishian Andrade cristhian.net  
+	Soulmkt - 2015
+-->
+
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Soulmkt_Pageimage>
+      <active>true</active>
+      <codePool>local</codePool>
+      <version>1.0</version>
+    </Soulmkt_Pageimage>
+  </modules>
+</config>

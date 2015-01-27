@@ -1,0 +1,13 @@
+<?php if($this->checkpage() and $this->enabled()) : ?>
+
+<?php echo $this->checkpage() ?>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery('a.mirror-toggle').click(function() {
+		jQuery('div.mirror').fadeToggle();
+		return false;
+	});
+});
+</script>
+
+<?php endif; ?>

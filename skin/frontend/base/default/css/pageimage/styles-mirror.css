@@ -1,0 +1,4 @@
+.mirror-toggle{position:fixed;z-index:100000;width:64px;height:64px;left:10px;top:0px; outline: none;}
+.mirror{position:absolute;z-index:99999;width:100%;text-align:center;background:#FFF;display:none;}
+.mirror img{display:inline-block;}
+a.mirror-toggle:focus {outline: none;}

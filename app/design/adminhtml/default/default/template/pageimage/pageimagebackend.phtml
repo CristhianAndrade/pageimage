@@ -1,0 +1,35 @@
+<div class="desenvolvido-por">
+	<img class="logo-modulo" src="<?php echo $this->getSkinUrl('images/pageimage/logo-soulmkt-modulos.jpg') ?>" />
+</div> 
+
+<div class="content-pageimage">
+	
+	<h3 class="head-cms-page"><?php echo $this->__('Fixed pages') ?></h3>
+
+		<div class="content-ex">
+			
+			<?php echo $this->getRow('pf-pageimage-cat', 'Catalog') ?>
+			<?php echo $this->getRow('pf-pageimage-view', 'Product') ?>
+			<?php echo $this->getRow('pf-pageimage-search', 'Search') ?>
+			<?php echo $this->getRow('pf-pageimage-cart', 'Cart') ?>
+			<?php echo $this->getRow('pf-pageimage-checkout', 'Checkout') ?>
+			<?php echo $this->getRow('pf-pageimage-checkout-success', 'Success Page') ?> 
+			<?php echo $this->getRow('pf-pageimage-contacts', 'Contacts') ?>
+			<?php echo $this->getRow('pf-pageimage-login', 'Login') ?>
+			<?php echo $this->getRow('pf-pageimage-logout-success', 'Logout(Login)') ?>
+			<?php echo $this->getRow('pf-pageimage-create-account', 'Create Account') ?>
+			<?php echo $this->getRow('pf-pageimage-account', 'My Account') ?>
+			 
+				
+		</div>	
+			
+	<h3 class="head-cms-page"><?php echo $this->__('CMS page') ?></h3>
+		
+		<div class="content-ex">
+				<?php foreach($this->getAllCsmPage() as $cms): ?>
+					
+					<?php echo $this->getRow($cms->getIdentifier(), $cms->getTitle()) ?>
+					
+				<?php endforeach; ?> 
+		</div>	
+</div>

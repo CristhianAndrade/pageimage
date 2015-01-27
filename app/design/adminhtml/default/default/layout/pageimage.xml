@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <pageimage_adminhtml_pageimagebackend_index>
+	<reference name="content">
+	  <block type="pageimage/adminhtml_pageimagebackend" name="pageimagebackend" template="pageimage/pageimagebackend.phtml"/>
+	</reference>
+
+	<reference name="head">
+		<action method="addCss"><stylesheet>css/pageimage/styles-adminhtml.css</stylesheet></action>
+		<!--<action method="addJs"><stylesheet>pageimage/jquery-1.11.2.min.js</stylesheet></action>
+		<action method="addJs"><stylesheet>pageimage/js.js</stylesheet></action>-->
+	</reference>  
+
+  </pageimage_adminhtml_pageimagebackend_index>
+</layout>

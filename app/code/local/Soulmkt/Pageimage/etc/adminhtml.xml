@@ -1,0 +1,27 @@
+<!-- 
+	Desenvolvido por Crishian Andrade cristhian.net  
+	Soulmkt - 2015
+-->
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <soulmkt_pageimage translate="title" />
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

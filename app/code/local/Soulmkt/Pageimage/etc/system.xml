@@ -1,0 +1,60 @@
+<!-- 
+	Desenvolvido por Crishian Andrade cristhian.net  
+	Soulmkt - 2015
+-->
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <soulmkt_pageimage translate="label">
+            <label>Soulmkt Page Image</label>
+            <tab>general</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>2000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <pageimage translate="label">
+                    <label>Page Image Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>200</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <enabled translate="label comment">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <opacity translate="label comment">
+                            <label>Opacity Page Image</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>Only the number of percentage (%) if there (0-100)</comment> 
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>validate-number</validate>
+                        </opacity>
+                        <enabled_jquery translate="label">
+                            <label>Enable jQuery</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled_jquery>
+                        
+                    </fields>
+                </pageimage>
+            </groups>
+        </soulmkt_pageimage>
+    </sections>
+</config>

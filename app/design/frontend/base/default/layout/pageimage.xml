@@ -1,0 +1,20 @@
+<layout>
+	<default>
+  		<reference name="after_body_start">
+      		<block type="pageimage/getblock" name="pageimage.getblock" as="getblock" template="pageimage/pageimage.phtml"/>
+   		</reference>
+   		
+   		<reference name="head">
+   			<action ifconfig="soulmkt_pageimage/pageimage/enabled_jquery" method="addJs">
+    			<script>pageimage/jquery-1.11.2.min.js</script>
+			</action>
+			
+			<action method="addCss">
+			    <name>css/pageimage/styles-mirror.css</name>
+			    <params>media="all"</params>
+			</action>
+			
+		</reference>
+		
+	</default>
+</layout>

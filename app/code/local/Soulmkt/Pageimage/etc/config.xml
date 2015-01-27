@@ -1,0 +1,144 @@
+<!-- 
+	Desenvolvido por Crishian Andrade cristhian.net  
+	Soulmkt - 2015
+-->
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Soulmkt_Pageimage>
+      <version>1.0</version>
+    </Soulmkt_Pageimage>
+  </modules>
+  <global>
+    <helpers>
+      <pageimage>
+        <class>Soulmkt_Pageimage_Helper</class>
+      </pageimage>
+    </helpers>
+	<blocks>
+	  <pageimage>
+		<class>Soulmkt_Pageimage_Block</class>
+	  </pageimage>
+	</blocks>
+	<models>
+	  <pageimage>
+		<class>Soulmkt_Pageimage_Model</class>
+		<resourceModel>pageimage_mysql4</resourceModel>
+	  </pageimage>
+	  <pageimage_mysql4>
+		<class>Soulmkt_Pageimage_Model_Mysql4</class>
+		<entities>		  
+			  <pageimage>
+				<table>pageimage</table>
+			  </pageimage>
+        </entities>
+	  </pageimage_mysql4>
+	</models>
+	<resources>
+	  <pageimage_setup>
+		<setup>
+		  <module>Soulmkt_Pageimage</module>
+		</setup>
+		<connection>
+		  <use>core_setup</use>
+		</connection>
+	  </pageimage_setup>
+	  <pageimage_write>
+		<connection>
+		  <use>core_write</use>
+		</connection>
+	  </pageimage_write>
+	  <pageimage_read>
+		<connection>
+		  <use>core_read</use>
+		</connection>
+	  </pageimage_read>
+	</resources>
+  </global>
+  
+  	<frontend>
+		<layout>
+		  <updates>
+			<pageimage>
+			  <file>pageimage.xml</file>
+			</pageimage>
+		  </updates> 
+		</layout>
+		
+		 <translate>
+            <modules>
+                <soulmkt_pageimage>
+                    <files>
+                        <default>pageimage.csv</default>
+                    </files>
+                </soulmkt_pageimage>
+            </modules>
+        </translate>
+        
+ 	</frontend> 
+ 	
+  <admin>
+	<routers>
+	  <pageimage>
+	    <use>admin</use>
+		<args>
+		  <module>Soulmkt_Pageimage</module>
+		  <frontName>admin_pageimage</frontName>
+		</args>
+	  </pageimage>
+	</routers>
+  </admin>
+  <adminhtml>
+  	
+  	 <translate>
+            <modules>
+                <soulmkt_pageimage>
+                    <files>
+                        <default>pageimage.csv</default>
+                    </files>
+                </soulmkt_pageimage>
+            </modules>
+        </translate>
+        
+	<menu>
+	  <pageimage module="pageimage">
+		<title>Page Image</title>
+		<sort_order>100</sort_order>
+		<children>
+		  <pageimagebackend module="pageimage">
+			<title>Manage Pages</title>
+			<sort_order>0</sort_order>
+			<action>admin_pageimage/adminhtml_pageimagebackend</action>
+		  </pageimagebackend>
+		</children>
+	  </pageimage>
+	</menu>
+	<acl>
+	  <resources>
+		<all>
+		  <title>Allow Everything</title>
+		</all>
+		<admin>
+		  <children>
+			<pageimage translate="title" module="pageimage">
+			  <title>Pageimage</title>
+			  <sort_order>1000</sort_order>
+			  <children>
+		  <pageimagebackend translate="title">
+			<title>SoulMkt - Page Image</title>
+		  </pageimagebackend>
+			  </children>
+			</pageimage>
+		  </children>
+		</admin>
+	  </resources>
+	</acl>
+	<layout>
+	  <updates>
+		<pageimage>
+		  <file>pageimage.xml</file>
+		</pageimage>
+	  </updates>
+	</layout>
+  </adminhtml>
+</config> 
