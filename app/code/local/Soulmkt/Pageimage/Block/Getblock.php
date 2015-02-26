@@ -75,6 +75,15 @@ class Soulmkt_Pageimage_Block_GetBlock extends Mage_Adminhtml_Block_Template {
 				else 
 					return false;
 			}
+
+			elseif ('catalog_product_view' == $fullActionName) {
+				  /**** Checkout success ****/
+			   	$id = 'pf-pageimage-view';
+			   	if($this->getCheckImage($id))
+					return $this->_getHtml($id);
+				else 
+					return false;
+			}
 			
 			
 			elseif ('contacts_index_index' == $fullActionName) {
