@@ -4,7 +4,7 @@
     <Soulmkt_Pageimage>
       <active>true</active>
       <codePool>local</codePool>
-      <version>1.0</version>
+      <version>1.0.2</version>
     </Soulmkt_Pageimage>
   </modules>
 </config>

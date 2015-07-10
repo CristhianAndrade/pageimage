@@ -1,9 +1,18 @@
 <?xml version="1.0"?>
 <config>
+    <tabs>
+        <soulmkt module="soulmkt_pageimage" translate="label">
+          <label>Soulmkt Extensions</label>
+          <sort_order>200</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>0</show_in_website>
+          <show_in_store>0</show_in_store>
+        </soulmkt> 
+    </tabs>
     <sections>
         <soulmkt_pageimage translate="label">
             <label>Soulmkt Page Image</label>
-            <tab>general</tab>
+            <tab>soulmkt</tab>
             <frontend_type>text</frontend_type>
             <sort_order>2000</sort_order>
             <show_in_default>1</show_in_default>

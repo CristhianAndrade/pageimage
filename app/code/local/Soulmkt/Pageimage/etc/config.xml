@@ -2,7 +2,7 @@
 <config>
   <modules>
     <Soulmkt_Pageimage>
-      <version>1.0</version>
+      <version>1.0.2</version>
     </Soulmkt_Pageimage>
   </modules>
   <global>

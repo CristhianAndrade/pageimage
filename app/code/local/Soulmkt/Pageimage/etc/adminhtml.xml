@@ -1,23 +1,22 @@
 <?xml version="1.0"?>
 <config>
     <acl>
-        <resources>
-            <all>
-                <title>Allow Everything</title>
-            </all>
-            <admin>
-                <children>
-                    <system>
-                        <children>
-                            <config>
-                                <children>
-                                    <soulmkt_pageimage translate="title" />
-                                </children>
-                            </config>
-                        </children>
-                    </system>
-                </children>
-            </admin>
-        </resources>
+      <resources>
+        <admin>
+          <children>
+            <system>
+              <children>
+                <config>
+                  <children>
+                    <soulmkt_pageimage  translate="title" module="soulmkt_pageimage">
+                      <title>SOULMKT - Page Image</title>
+                    </soulmkt_pageimage>
+                  </children>
+                </config>
+              </children>
+            </system>
+          </children> 
+        </admin>
+      </resources>
     </acl>
 </config>
