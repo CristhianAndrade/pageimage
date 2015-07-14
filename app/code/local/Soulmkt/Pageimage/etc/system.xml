@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config>
     <tabs>
-        <soulmkt module="soulmkt_pageimage" translate="label">
+        <soulmkt module="pageimage" translate="label">
           <label>Soulmkt Extensions</label>
           <sort_order>200</sort_order>
           <show_in_default>1</show_in_default>
